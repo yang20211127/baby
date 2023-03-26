@@ -61,15 +61,7 @@ def get_weather(province, city):
     temp = weatherinfo["temp"]
     # 最低气温
     tempn = weatherinfo["tempn"]
-    # print(response_json)
-    s_weatherinfo = response_json["weatherinfo"]
-    # 天气
-    s_weather = weatherinfo["weather"]
-    # 最高气温
-    s_temp = weatherinfo["temp"]
-    # 最低气温
-    s_tempn = weatherinfo["tempn"]
-    return weather, temp, tempn,s_weather, s_temp, s_tempn
+    return weather, temp, tempn
 
 
 def get_birthday(birthday, year, today):
